@@ -1,5 +1,6 @@
-import Vuetify from "vuetify";
-import "vuetify/dist/vuetify.min.css";
+import Element from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+
 export default ({ Vue, options, router }) => {
-  Vue.use(Vuetify);
+  Vue.use(Element);
 };

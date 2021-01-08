@@ -2,8 +2,10 @@
 
 ### 全屏背景
 
+>使用一个置底的绝对定位div实现全屏背景
+
 ```css
-思路:使用一个置底的绝对定位div实现全屏背景
+
 .bgimg{
     position: fixed;
     z-index: -100;
@@ -16,16 +18,21 @@
     background-position: center;
 }
 
-线性渐变背景
+```
 
- background: linear-gradient(
+### 线性渐变背景
+
+```CSS
+background: linear-gradient(
     145deg,
     #0e4174 40%,
     #177abb 0,
     #177abb 80%,
     white 0
-  );
+);
 ```
+
+
 
 ### 文字换行
 
@@ -76,7 +83,7 @@
 
 ### 小技巧
 
-```
+```css
 使用硬件加速
  transform: translateZ(0);
  
@@ -114,12 +121,10 @@ input:-ms-input-placeholder {
 
 ### 三角形
 
-```
-向上的三角形
-原理:border是一个梯形结构，
-	把宽度去掉，只剩下border，
-	
+>向上的三角形
+>原理:border是一个梯形结构，把宽度去掉，只剩下border，
 
+```css
 .wrap { 
   border-color: transparent transparent green transparent; 
   border-style: solid; 
@@ -156,24 +161,24 @@ body{
 
 ```CSS
 /* 自定义滚动条 */
-#message::-webkit-scrollbar {
+*::-webkit-scrollbar {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
     background: #535353;
 }
-#message::-webkit-scrollbar {
+*::-webkit-scrollbar {
     /*滚动条整体样式*/
     width: 10px;
     /*高宽分别对应横竖滚动条的尺寸*/
     height: 1px;
 }
-#message::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     /*滚动条里面小方块*/
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
     background: #535353;
 }
-#message::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     /*滚动条里面轨道*/
     -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -188,13 +193,7 @@ body{
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 ```
 
-### 常用内容结构
-
-```
-电梯导航、手风琴、横向手风琴、
-```
-
-### 底部导航栏<完美版>
+### 底部导航栏
 
 ```html
 <!DOCTYPE html>
@@ -260,7 +259,7 @@ body{
 
 ### 隐藏滚动条
 
-```
+```css
 .select::-webkit-scrollbar {display:none}
 ```
 
@@ -286,6 +285,5 @@ body{
     align-items: center;
     justify-content: center;
 }
-
 ```
 
