@@ -6,16 +6,11 @@
   "author": "6byte <444891953@qq.com>",
   "license": "MIT",
   "dependencies": {
-    "element-ui": "^2.14.1",
-    "vuetify": "^2.4.2"
+    "vuepress-plugin-nuggets-style-copy": "^1.0.3",
+    "vuepress-theme-reco": "^1.6.1"
   },
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
-  },
-  "devDependencies": {
-    "deepmerge": "^4.2.2",
-    "sass": "^1.32.2",
-    "sass-loader": "^10.1.0"
   }
 }
